@@ -8,6 +8,8 @@
 	<link rel="icon" href="img/tab2.jpg" sizes="16x16" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Lobster|Ma+Shan+Zheng&display=swap" rel="stylesheet"> 
     <link href="css/styles.css" rel="stylesheet">
 
 	<title>Online Book Reader</title>
@@ -16,18 +18,19 @@
 	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="img-fluid mt-0" height="30px" width="90px"></a>
-			<ul class="navbar-nav"> 
+			<ul class="navbar-nav ml-auto"> 
 				<li class="nav-item"><a class="nav-link text-white" href="#"><b>Sign Up</b></a></li>
 				<li class="nav-item"><a class="btn btn-primary text-white nav-link" href="#">Log In</a></li>
 			</ul>
 		</div>
 	</nav>
-	<div class="container-fluid">
+	<div class="container-fluid" id="main1">
 		<div class="row row-content">
-			<div class="col col-sm-2">
+			<div class="col-12 col-sm-2">
 				<div class="sidebar">
 					<ul class="list-unstyled align-items-center justify-content-center">
-						<li><a href="#" class="btn active">Classic</a></li>
+						<li><a href="#" class="btn active">Home</a></li>
+						<li><a href="#" class="btn">Classic</a></li>
 						<li><a href="#" class="btn">Adventure</a></li>
 						<li><a href="#" class="btn">Thriller</a></li>
 						<li><a href="#" class="btn">Romance</a></li> 
@@ -42,24 +45,404 @@
 						<li><a href="#" class="btn">Other</a></li>
 					</ul>
 				</div>
+				<br><!--
+				<div class="card">
+					<div class="card-body">The journey of a lifetime starts with the turning of a page. </div>
+				</div>-->
 			</div>
 			<div class="col col-sm-10">
-				<header>
-					<button class="btn btn-success text-white">Get a random book!</button>
-				</header>
+				<div class="container-fluid" id="ss">
+					<!--header row---------------------------------------------------------->
+					<div class="mt-2 row">
+						<div class="col-12 col-sm-12">
+							<button class="btn btn-success text-white"><b>Get a random book!</b></button>
+							<input type="text" style="font-family:Arial,FontAwesome" placeholder="&#xf002 Search for your favourite book...">
+							<button class="btn btn-warning text-white"><b>About Us</b></button>
+							<button class="btn btn-warning text-white"><b>Library</b></button>
+						</div>
+					</div>
+					<!--Best sellers-------------------------------------------------------------------------->
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<h3 class="title">Best Sellers Around The World</h3>
+							<hr>
+						</div>
+					</div>
+
+					<!--CAROUSEL------------------------------------------------------------------------------>
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<div id="demo" class="carousel slide">
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							      <div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							      <div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							  </div>
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+							    <span class="carousel-control-prev-icon "></span>
+							  </a>
+							  <a class="carousel-control-next" href="#demo" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+							</div>
+						</div>	
+					</div>
+				
+
+					<!--New Arrivals------------------------------------------------------------------------->
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<h3 class="title">New Arrivals</h3>
+							<hr>
+						</div>
+					</div>
+
+					<!--CAROUSEL------------------------------------------------------------------------------>
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<div id="demo" class="carousel slide">
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							      <div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							      <div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							  </div>
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+							    <span class="carousel-control-prev-icon "></span>
+							  </a>
+							  <a class="carousel-control-next" href="#demo" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+							</div>
+						</div>	
+					</div>
+
+					<!--Classics------------------------------------------------------------------------->
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<h3 class="title">Best Sellers Around The World</h3>
+							<hr>
+						</div>
+					</div>
+
+					<!--CAROUSEL------------------------------------------------------------------------------>
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<div id="demo" class="carousel slide">
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book1.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							      <div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book2.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							    <div class="carousel-item">
+							      <div class="row">
+							    		<div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+									    <div class="col col-sm-2">
+									      	<img src="img/Book3.jpg" class="img-fluid img-thumbnail">
+									      	<button class="btn btn-primary text-black">Read</button>
+									    </div>
+							    	</div>
+							    </div>
+							  </div>
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+							    <span class="carousel-control-prev-icon "></span>
+							  </a>
+							  <a class="carousel-control-next" href="#demo" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+							</div>
+						</div>	
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<footer>
-		<div class="container">
-			<div class="row">
-				
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-sm-3">
+					<h4><b>Connect</b></h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Blogs</a></li>
+						<li><a href="#">Users</a></li>
+						<li><a href="#">Forum</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4><b>Discover</b></h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Get the App</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">More</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4><b>Help</b></h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">Report an issue</a></li>
+						<li><a href="#">FAQs</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4><b>Contact Us</b></h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</footer>
+	<div class="text-white foot2">
+		<p>Copyright © 2019 By Drashti Modasara.</p>
+	</div>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-</html>/
+</html>

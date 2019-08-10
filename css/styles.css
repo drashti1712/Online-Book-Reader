@@ -6,17 +6,14 @@
 	width:80px;
 }
 
-.sidebar{
-	margin-top:4em;
-	background-color:#ebebeb;
-	overflow:auto;
-	border:dashed 1px;
-}
 .sidebar a {
+  background-color:#ebebeb;
   display: block;
   color: black;
   padding:10px;
   text-decoration: none;
+  border-right:dashed 1px;
+  border-left:dashed 1px;
   border-bottom: dashed 1px;
 }
  
@@ -27,6 +24,67 @@
 .sidebar a:hover:not(.active) {
   background-color:#dacafb;
 }
+
+#main1{
+	margin-top:4em;
+}
+#ss input[type=text] {
+  padding: 6px;
+  border: solid 2px black;
+  border-radius:20px;
+  width: 64%;
+  font-size: 16px;
+}
+#ss .btn-success{
+	background-color:#5cb85c;
+}
+#ss .btn-warning{
+	background-color:#ffa834;
+}
+#ss{
+	background-color:;
+}
+.title{
+	margin-top:30px;
+	color:#0e112e;
+	font-family: Lobster, cursive;
+}
+.carousel-item .btn{
+	position:relative;
+	left:45px;
+}
+.carousel-control-prev {
+    left: -100px;
+}
+
+.carousel-control-next{
+	right:-90px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+footer{
+	margin-top:10%;
+	height:300px;
+	padding:4em;
+	background-color:#c2a3fa;
+}
+
+.foot2{
+	background-color:black;
+	height:50px;
+	padding:10px;
+	margin-bottom:0px;
+}
+/*
+.card{
+	background-color:#ffffcc;
+	color:#ac4858;
+	font-size:1.5em;
+	font-family: 'Ma Shan Zheng', cursive;
+}*/
 
 @media screen and (max-width:600px;){
 	.navlink{
